@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /money
+limit:
+  minMoney: 3
+  maxMoney: 9999
+  des: min is ${limit.minMoney},max is ${limit.maxMoney}

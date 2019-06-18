@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /money
+limit:
+  minMoney: 0.01
+  maxMoney: 9999
+  des: min is ${limit.minMoney},max is ${limit.maxMoney}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto:  update
+    show-sql: true
